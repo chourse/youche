@@ -1,0 +1,258 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start_bg {
+  width: 100%;
+  height: 600px;
+  background: url("../img/banner.png") center no-repeat;
+  background-size: 100% 100%;
+  flex-direction: column;
+  p {
+    color: #FFC001;
+
+  }
+  .title {
+    font: 600 50px '';
+  }
+  .text {
+    font: 16px '';
+  }
+  span {
+    display: block;
+    width: 200px;
+    border-bottom: 1px solid #FFC001;
+    margin: 10px;
+  }
+}
+
+.advantage {
+  .title {
+    flex-direction: column;
+    margin-bottom: 60px;
+    p {
+      &:nth-of-type(1) {
+        font: 600 35px '';
+        margin-top: 80px;
+      }
+      &:nth-of-type(3) {
+        font: 18px '';
+      }
+    }
+  }
+
+  .four_div {
+    .row {
+      & > div {
+        flex-direction: column;
+        margin: 10px 0;
+        p {
+          &:nth-of-type(2) {
+            font: 400 20px '';
+          }
+          &:nth-of-type(3) {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.course {
+  height: 350px;
+  background-color: #f6f6f6;
+  background-image: url("../img/pic four.png");
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  position: relative;
+  .text {
+    position: absolute;
+    right: 35px;
+    bottom: 28px;
+    background-color: white;
+    padding: 40px;
+    width: 760px;
+    height: 290px;
+    p {
+      &:nth-of-type(1) {
+        font: 400 20px '';
+      }
+      &:nth-of-type(3) {
+        margin-bottom: 30px;
+
+      }
+
+    }
+  }
+}
+
+.engineer {
+  background-color: black;
+  height: 400px;
+  justify-content: space-around;
+  & > div {
+    flex-direction: column;
+    p {
+      color: white;
+      text-align: center;
+      &:nth-of-type(2) {
+        font: 500 23px '';
+      }
+      &:nth-of-type(3) {
+        font: 500 18px '';
+      }
+    }
+  }
+}
+
+.compet {
+  .title {
+    flex-direction: column;
+    margin-bottom: 60px;
+    p {
+      text-align: center;
+      &:nth-of-type(1) {
+        font: 600 35px '';
+        margin-top: 80px;
+      }
+      &:nth-of-type(3) {
+        font: 18px '';
+      }
+    }
+  }
+  .container {
+    .row {
+      & > div {
+        p {
+          text-align: center;
+          img {
+            width: 100%;
+          }
+          &:nth-of-type(2) {
+            font: 500 23px '';
+          }
+          &:nth-of-type(3), &:nth-of-type(4){
+            font: 500 20px '';
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 992px) {
+  .start_bg {
+    height: 350px;
+    .title {
+      font: 500 40px '';
+    }
+    .text {
+      font: 14px '';
+    }
+  }
+
+  .course {
+    height: 300px;
+    background-size: 70% 100%;
+    .text {
+      padding: 30px;
+      width: 600px;
+      height: 235px;
+      p {
+        &:nth-of-type(1) {
+          font: 400 18px '';
+        }
+        &:nth-of-type(3) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .engineer {
+    & > div {
+      p {
+        &:nth-of-type(2) {
+          font: 500 20px '';
+        }
+        &:nth-of-type(3) {
+          font: 500 16px '';
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  .start_bg {
+    height: 300px;
+    .title {
+      font: 400 30px '';
+    }
+    .text {
+      font: 12px '';
+    }
+  }
+
+  .course {
+    background-size: 100% 100%;
+    .text {
+      padding: 10px;
+      width: 85%;
+      height: 235px;
+      bottom: 35px;
+      p {
+        &:nth-of-type(1) {
+          font: 400 14px '';
+        }
+        &:nth-of-type(3) {
+          margin-bottom: 10px;
+          font-size: 14px;
+        }
+        &:nth-of-type(4) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .engineer {
+    & > div {
+      p {
+        &:nth-of-type(2) {
+          font: 400 18px '';
+        }
+        &:nth-of-type(3) {
+          font: 400 14px '';
+        }
+      }
+    }
+  }
+  .compet{
+    .container {
+      .row {
+        & > div {
+          p {
+            img{
+              width: 80%;
+            }
+            &:nth-of-type(2) {
+              font: 500 18px '';
+            }
+            &:nth-of-type(3), &:nth-of-type(4){
+              font: 500 16px '';
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
