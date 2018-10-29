@@ -1,13 +1,15 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title></title>
 		<style type="text/css">
 			#header{
+				
 				width: 100%;
-				height: 100px;
-				/*background: red;*/
 				position: fixed;
 				margin: 0 auto;
 				z-index: 999;
@@ -30,6 +32,49 @@
 				/*transform: translate(-200px);*/ 
 				
 			}
+			@media (min-width: 768px){
+			    .navbar {
+			         border-radius: 0!important;
+			    }
+			}
+			@media (max-width: 480px) {
+			    .container-fluid {
+			        margin-left: 0 !important;
+			    }
+			
+			    .navbar-brand > img {
+			        width: 50%;
+			    }
+			
+			    .collapse, .navbar-brand {
+			    	 margin-left: 0 !important;
+			        min-height: 80px !important;
+			    }
+			
+			    .navbar-nav {
+			        margin-left: 0 !important;
+			        display: flex;
+			        flex-direction: column;
+			        justify-content: center;
+			        align-items: center;
+			    }
+			
+			    .navbar-nav li {
+			        width: 100%;
+			        margin-top: 10px;
+			        margin-bottom: 10px;
+			    }
+			
+			    .navbar-nav li a {
+			        text-align: center;
+			        line-height: 0px !important;
+			    }
+			
+			    .navbar-nav {
+			        margin: 0 !important;
+			    }
+			}
+			
 			
 			
 		</style>
@@ -41,7 +86,7 @@
 			<nav class="navbar navbar-default">
 			  <div class="container-fluid">
 			    
-			    <div class="navbar-header">
+			    <div class="navbar-header row">
 			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 			        <span class="sr-only">Toggle navigation</span>
 			        <span class="icon-bar"></span>
@@ -53,11 +98,11 @@
 			    
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			    			 <ul class="nav navbar-nav navbar-right">
-						        <li><a href="index.html">首页</a></li>
-						        <li><a href="chanpingzhongxin.html">产品中心</a></li>
+						        <li><a href="#">首页</a></li>
+						        <li><a href="#">产品中心</a></li>
 						        <li><a href="#">公司简介</a></li>
-						        <li><a href="news.html">新闻中心</a></li>
-						        <li><a href="lianxiwomen.html">联系我们</a></li>
+						        <li><a href="#">新闻中心</a></li>
+						        <li><a href="#">联系我们</a></li>
 						      </ul>
 			    	
 			    </div>
